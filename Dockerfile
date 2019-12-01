@@ -15,9 +15,10 @@ RUN \
     make && \
     make install && \
     rm /tmp/* -rf && \
-    apt autoremove -y wget build-essential libssl-dev libexpat1-dev
+    apt autoremove -y wget build-essential libssl-dev libexpat1-dev && \
+    apt clean
 
-CMD ["unbound", "-b"]
+CMD ["unbound", "-d"]
 
 
 
