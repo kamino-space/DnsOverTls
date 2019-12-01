@@ -13,8 +13,11 @@ RUN \
     cd unbound-1.9.5 && \
     ./configure && \
     make && \
-    make install
+    make install && \
+    rm /tmp/* -rf && \
+    apt autoremove -y wget build-essential libssl-dev libexpat1-dev
 
+CMD ["unbound", "-b"]
 
 
 
