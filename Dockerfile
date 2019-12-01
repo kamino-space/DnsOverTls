@@ -18,6 +18,8 @@ RUN \
     apt autoremove -y wget build-essential libssl-dev libexpat1-dev && \
     apt clean
 
+ADD config/. /usr/local/etc/unbound/.
+
 CMD ["unbound", "-d"]
 
 
