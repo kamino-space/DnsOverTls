@@ -18,8 +18,12 @@ docker build -t dot:test .
 
 ## run container
 ```
-docker run -d -p 53:53/udp -p 853:853 --restart always --name dns dot:test 
+docker run -d -p 53:53/udp -p 853:853 -v confdir:/usr/local/etc/unbound/local.d --restart always --name dns dot:test 
 ```
+
+## add a record
+add .conf files to confdir.  
+https://nlnetlabs.nl/documentation/unbound/unbound.conf/#local-data
 
 ## test server
 ```
