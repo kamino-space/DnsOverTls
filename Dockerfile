@@ -14,6 +14,7 @@ RUN \
     ./configure && \
     make && \
     make install && \
+    mkdir -p /var/log/unbound && \
     rm /tmp/* -rf && \
     apt autoremove -y wget build-essential libssl-dev libexpat1-dev && \
     apt clean
