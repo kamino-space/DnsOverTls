@@ -4,7 +4,7 @@ WORKDIR /root
 EXPOSE 853
 
 RUN \
-    echo "deb http://mirrors.tencentyun.com/debian/ stretch main non-free contrib\ndeb http://mirrors.tencentyun.com/debian/ stretch-updates main non-free contrib\ndeb http://mirrors.tencentyun.com/debian/ stretch-backports main non-free contrib\ndeb-src http://mirrors.tencentyun.com/debian/ stretch main non-free contrib\ndeb-src http://mirrors.tencentyun.com/debian/ stretch-updates main non-free contrib\ndeb-src http://mirrors.tencentyun.com/debian/ stretch-backports main non-free contrib\ndeb http://mirrors.tencentyun.com/debian-security/ stretch/updates main non-free contrib\ndeb-src http://mirrors.tencentyun.com/debian-security/ stretch/updates main non-free contrib" > /etc/apt/sources.list && \
+    # echo "deb http://mirrors.tencentyun.com/debian/ stretch main non-free contrib\ndeb http://mirrors.tencentyun.com/debian/ stretch-updates main non-free contrib\ndeb http://mirrors.tencentyun.com/debian/ stretch-backports main non-free contrib\ndeb-src http://mirrors.tencentyun.com/debian/ stretch main non-free contrib\ndeb-src http://mirrors.tencentyun.com/debian/ stretch-updates main non-free contrib\ndeb-src http://mirrors.tencentyun.com/debian/ stretch-backports main non-free contrib\ndeb http://mirrors.tencentyun.com/debian-security/ stretch/updates main non-free contrib\ndeb-src http://mirrors.tencentyun.com/debian-security/ stretch/updates main non-free contrib" > /etc/apt/sources.list && \
     apt update && \
     apt install -y wget build-essential libssl-dev libexpat1-dev && \
     cd /tmp && \
