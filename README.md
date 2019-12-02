@@ -1,5 +1,5 @@
 # DNS over TLS docker
-create a dot server with docker
+create a dot server with unbound in docker.
 
 ## clone this repository
 ```
