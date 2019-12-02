@@ -8,7 +8,7 @@ RUN \
     apt update && \
     apt install -y wget build-essential libssl-dev libexpat1-dev && \
     cd /tmp && \
-    wget http://10.105.37.145:8000/unbound-1.9.5.tar.gz && \
+    wget https://nlnetlabs.nl/downloads/unbound/unbound-1.9.5.tar.gz && \
     tar -zxvf unbound-1.9.5.tar.gz && \
     cd unbound-1.9.5 && \
     ./configure && \
