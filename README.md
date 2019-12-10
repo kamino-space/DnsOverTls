@@ -3,7 +3,7 @@ create a dot server with unbound in docker.
 
 ## clone this repository
 ```
-git clone https://github.com/kamino-space/DoT-docker.git
+git clone https://github.com/kamino-space/DnsOverTls.git
 ```
 
 ## add your cert
